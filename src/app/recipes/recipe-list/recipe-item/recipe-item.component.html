@@ -1,0 +1,14 @@
+<a (click)="onSelected(rsp)"
+  href="#"
+  class="list-group-item clearfix d-flex">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{rsp.name}}</h4>
+    <p class="list-group-item-text">{{rsp.description}}</p>
+  </div>
+  <span class="ms-auto pull-right">
+          <img
+            [src]="rsp.imagePath"
+            class="img-responsive"
+            style="max-height:50px"/>
+        </span>
+</a>

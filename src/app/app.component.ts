@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styles: [`
+    h1 {
+      color: red
+    }
+  `]
 })
 export class AppComponent {
-  title = 'Book-Recipe';
+  loadedFeature = '';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
+
+  title = 'angular-course';
 }
